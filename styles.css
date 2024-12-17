@@ -1,0 +1,127 @@
+/* Estilo para o título */
+h1 {
+    font-size: 2.5em; /* Aumenta o tamanho da fonte */
+    color: #181717; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    letter-spacing: 2px; /* Espaçamento entre letras */
+}
+
+/* Estilo para os parágrafos */
+p {
+    font-size: 1.2em; /* Aumenta o tamanho da fonte */
+    color: #0a0a0a; /* Cor do texto */
+    line-height: 1.6; /* Altura da linha para melhorar a legibilidade */
+    margin-bottom: 10px; /* Espaçamento abaixo de cada parágrafo */
+    text-align: center; /* Centraliza o texto */
+    max-width: 800px; /* Define a largura máxima para os parágrafos */
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
+}
+
+/* Estilo para o corpo da página */
+body {
+    display: flex; /* Define layout flexível para o corpo */
+    flex-direction: column; /* Alinha elementos em coluna */
+    justify-content: center; /* Centraliza elementos verticalmente */
+    align-items: center; /* Centraliza elementos horizontalmente */
+    height: 155vh; /* Define altura da página como 100% da altura da janela */
+    margin: 0; /* Remove margens padrão */
+    background-color: #63c548; /* Define cor de fundo neutra */
+}
+
+/* Estilo para a tabela de pontuação */
+#score-board {
+    display: flex; /* Define layout flexível para a tabela de pontuação */
+    justify-content: center; /* Centraliza pontuação horizontalmente */
+    margin-bottom: 20px; /* Espaço abaixo da tabela de pontuação */
+    font-size: 1.5em; /* Define tamanho da fonte maior */
+}
+
+/* Estilo para cada pontuação */
+.score {
+    margin: 0 10px; /* Espaçamento horizontal entre pontuações */
+}
+
+/* Estilo para a pontuação do jogador X */
+#score-x {
+    color: red; /* Cor vermelha para pontuação do jogador X */
+}
+
+/* Estilo para a pontuação do jogador O */
+#score-o {
+    color: blue; /* Cor azul para pontuação do jogador O */
+}
+
+/* Estilo para o tabuleiro do jogo */
+#game-board {
+    display: grid; /* Define layout em grid para o tabuleiro */
+    grid-template-columns: repeat(3, 100px); /* Três colunas de 100px */
+    grid-template-rows: repeat(3, 100px); /* Três linhas de 100px */
+    gap: 15px; /* Espaçamento entre as células do tabuleiro */
+}
+
+/* Estilo para cada célula do tabuleiro */
+.cell {
+    width: 100px; /* Largura de cada célula */
+    height: 100px; /* Altura de cada célula */
+    background-color: #856592; /* Cor de fundo das células */
+    display: flex; /* Define layout flexível para as células */
+    align-items: center; /* Centraliza conteúdo verticalmente */
+    justify-content: center; /* Centraliza conteúdo horizontalmente */
+    font-size: 2em; /* Define tamanho da fonte maior */
+    cursor: pointer; /* Muda cursor para indicar que a célula é clicável */
+    border-radius: 20px; /* Bordas arredondadas nas células */
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.74); /* Adiciona sombra às células */
+}
+
+/* Estilo para as células com X */
+.cell.x {
+    color: red; /* Cor vermelha para o X */
+}
+
+/* Estilo para as células com O */
+.cell.o {
+    color: blue; /* Cor azul para o O */
+}
+
+/* Estilo para o contêiner dos botões de reset */
+#buttons {
+    display: flex; /* Define layout flexível para os botões */
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    margin-top: 20px; /* Espaçamento acima dos botões */
+}
+
+/* Estilo para cada botão de reset */
+#buttons button {
+    margin: 0 10px; /* Espaçamento horizontal entre os botões */
+    padding: 17px 40px; /* Espaçamento interno dos botões */
+    border-radius: 50px; /* Bordas arredondadas nos botões */
+    cursor: pointer; /* Muda cursor para indicar que o botão é clicável */
+    border: 0; /* Remove bordas dos botões */
+    background-color: white; /* Cor de fundo dos botões */
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px; /* Adiciona sombra aos botões */
+    letter-spacing: 1.5px; /* Espaçamento entre letras */
+    text-transform: uppercase; /* Transforma texto em maiúsculas */
+    font-size: 15px; /* Define tamanho da fonte */
+    transition: all 0.5s ease; /* Adiciona transição suave */
+}
+
+/* Estilo para os botões ao passar o mouse */
+button:hover {
+    letter-spacing: 3px; /* Aumenta espaçamento entre letras */
+    background-color: hsl(261deg 80% 48%); /* Muda cor de fundo dos botões */
+    color: hsl(0, 0%, 100%); /* Muda cor do texto dos botões */
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px; /* Adiciona sombra maior aos botões */
+}
+
+/* Estilo para os botões ao serem clicados */
+button:active {
+    letter-spacing: 3px; /* Mantém espaçamento entre letras */
+    background-color: hsl(261deg 80% 48%); /* Mantém cor de fundo dos botões */
+    color: hsl(0, 0%, 100%); /* Mantém cor do texto dos botões */
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px; /* Remove sombra dos botões */
+    transform: translateY(10px); /* Move os botões para baixo */
+    transition: 100ms; /* Define transição rápida */
+}
